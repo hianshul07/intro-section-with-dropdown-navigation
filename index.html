@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Intro section with dropdown navigation</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="./tailwind.config.js"></script>
+		<link rel="stylesheet" href="style.css" />
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body class="flex h-[100vh]">
+		<main id="main">
+			<nav class="flex justify-between my-6 mx-4">
+				<img src="./images/logo.svg" alt="company-logo" />
+				<img src="./images/icon-menu.svg" alt="menu icon" id="menuIcon" />
+			</nav>
+			<div class="flex flex-col items-center">
+				<img src="./images/image-hero-mobile.png" alt="" />
+				<h1 class="font-bold text-center text-4xl m-8">Make remote work</h1>
+				<section>
+					<p class="text-center p-4 text-lg text-[#868686] font-semibold">
+						Get your team in sync, no matter your location. Streamline
+						processes, create team rituals, and watch productivity soar.
+					</p>
+				</section>
+				<button
+					class="bg-black font-semibold text-lg text-white px-6 py-3 rounded-2xl m-4"
+				>
+					Learn More
+				</button>
+				<div class="clients flex w-full justify-around my-8">
+					<div class="h-4">
+						<img
+							src="./images/client-databiz.svg"
+							alt="client-databiz"
+							class="h-full"
+						/>
+					</div>
+					<div class="h-7">
+						<img
+							src="./images/client-audiophile.svg"
+							alt="client-audiophile"
+							class="h-full"
+						/>
+					</div>
+					<div class="h-4">
+						<img
+							src="./images/client-meet.svg"
+							alt="client-meet"
+							class="h-full"
+						/>
+					</div>
+					<div class="h-5">
+						<img
+							src="./images/client-maker.svg"
+							alt="client-maker"
+							class="h-full"
+						/>
+					</div>
+				</div>
+			</div>
+		</main>
+		<aside
+			id="aside"
+			class="flex-col hidden w-4/6 absolute right-0 h-[100vh] z-10 bg-white text-[#686868]"
+		>
+			<div class="cancel-icon w-full flex justify-end">
+				<img
+					src="./images/icon-close-menu.svg"
+					class="my-6 mx-4"
+					alt="icon-close-menu"
+					id="closeIcon"
+				/>
+			</div>
+			<div class="links flex flex-col m-8">
+				<ul class="text-lg flex flex-col gap-4">
+					<li class="flex items-center w-2/5 justify-between">
+						Features
+						<img src="./images/icon-arrow-down.svg" class="h-fit" alt="" />
+					</li>
+					<li class="flex items-center w-2/5 justify-between">
+						Company
+						<img src="./images/icon-arrow-down.svg" class="h-fit" alt="" />
+					</li>
+					<li>Careers</li>
+					<li>About</li>
+				</ul>
+				<div class="account flex flex-col gap-4 items-center mt-8">
+					<p>Login</p>
+					<button
+						class="border-2 border-solid border-[#686868] w-full px-6 py-2 rounded-2xl"
+					>
+						Register
+					</button>
+				</div>
+			</div>
+		</aside>
+		<!--
+       Features Company   Login Register Make remote work Get your team
+		in sync, no matter your location. Streamline processes, create team rituals,
+		and watch productivity soar. Learn more 
+  -->
+
+		<!-- <div class="attribution absolute bottom-0 ">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div> -->
+		<script src="./script.js"></script>
+	</body>
+</html>
+
