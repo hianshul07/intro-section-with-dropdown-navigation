@@ -28,54 +28,80 @@
 			}
 		</style>
 	</head>
-	<body class="flex h-[100vh]">
-		<main id="main">
-			<nav class="flex justify-between my-6 mx-4">
-				<img src="./images/logo.svg" alt="company-logo" />
+	<body class="flex items-center h-[100vh]">
+		<main id="main" class="w-screen">
+			<nav class="flex justify-between sm:mx-24 my-6 mx-4 absolute left-0 right-0 top-0">
+				<div class="flex w-3/5 justify-between">
+					<img src="./images/logo.svg" alt="company-logo" />
+					<div class="hidden sm:block">
+						<ul class="flex w-4/5 ml-20 gap-20">
+							<li class="flex h-fit w-1/4 gap-2 items-center">
+								Features
+								<img
+									src="./images/icon-arrow-down.svg"
+									class="h-fit relative top-1"
+									alt=""
+								/>
+							</li>
+							<li class="flex h-fit w-1/4 gap-2 items-center">
+								Company
+								<img
+									src="./images/icon-arrow-down.svg"
+									class="h-fit relative top-1"
+									alt=""
+								/>
+							</li>
+							<li class="w-1/4">Careers</li>
+							<li class="w-1/4">About</li>
+						</ul>
+					</div>
+				</div>
 				<img src="./images/icon-menu.svg" alt="menu icon" id="menuIcon" />
 			</nav>
-			<div class="flex flex-col items-center">
+			<div class="flex flex-col items-center sm:flex-row-reverse">
 				<img src="./images/image-hero-mobile.png" alt="" />
-				<h1 class="font-bold text-center text-4xl m-8">Make remote work</h1>
-				<section>
-					<p class="text-center p-4 text-lg text-[#868686] font-semibold">
-						Get your team in sync, no matter your location. Streamline
-						processes, create team rituals, and watch productivity soar.
-					</p>
-				</section>
-				<button
-					class="bg-black font-semibold text-lg text-white px-6 py-3 rounded-2xl m-4"
-				>
-					Learn More
-				</button>
-				<div class="clients flex w-full justify-around my-8">
-					<div class="h-4">
-						<img
-							src="./images/client-databiz.svg"
-							alt="client-databiz"
-							class="h-full"
-						/>
-					</div>
-					<div class="h-7">
-						<img
-							src="./images/client-audiophile.svg"
-							alt="client-audiophile"
-							class="h-full"
-						/>
-					</div>
-					<div class="h-4">
-						<img
-							src="./images/client-meet.svg"
-							alt="client-meet"
-							class="h-full"
-						/>
-					</div>
-					<div class="h-5">
-						<img
-							src="./images/client-maker.svg"
-							alt="client-maker"
-							class="h-full"
-						/>
+				<div class=" flex flex-col items-center">
+					<h1 class="font-bold text-center text-4xl m-8">Make remote work</h1>
+					<section>
+						<p class="text-center p-4 text-lg text-[#868686] font-semibold">
+							Get your team in sync, no matter your location. Streamline
+							processes, create team rituals, and watch productivity soar.
+						</p>
+					</section>
+					<button
+						class="bg-black w-2/5 font-semibold text-lg text-white  py-3 rounded-2xl my-4"
+					>
+						Learn More
+					</button>
+					<div class="clients flex w-full justify-around my-8">
+						<div class="h-4">
+							<img
+								src="./images/client-databiz.svg"
+								alt="client-databiz"
+								class="h-full"
+							/>
+						</div>
+						<div class="h-7">
+							<img
+								src="./images/client-audiophile.svg"
+								alt="client-audiophile"
+								class="h-full"
+							/>
+						</div>
+						<div class="h-4">
+							<img
+								src="./images/client-meet.svg"
+								alt="client-meet"
+								class="h-full"
+							/>
+						</div>
+						<div class="h-5">
+							<img
+								src="./images/client-maker.svg"
+								alt="client-maker"
+								class="h-full"
+							/>
+						</div>
 					</div>
 				</div>
 			</div>
