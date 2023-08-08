@@ -1,7 +1,7 @@
 const showMenu = document.getElementById('menuIcon');
 const closeMenu = document.getElementById('closeIcon');
 const sideMenu = document.getElementById('aside');
-const mainScreen = document.getElementById('main');
+const mainScreen = document.getElementById('body');
 
 showMenu.addEventListener('click', function () {
 	sideMenu.style.display = 'block';
