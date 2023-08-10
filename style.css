@@ -1,0 +1,8 @@
+@font-face {
+  font-family: Epilogue;
+  src: url('./fonts/Epilogue-VariableFont_wght.ttf');
+}
+
+#heading {
+  font-weight: bolder;
+}

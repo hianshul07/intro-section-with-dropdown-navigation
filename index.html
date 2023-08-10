@@ -15,7 +15,7 @@
 		<title>Frontend Mentor | Intro section with dropdown navigation</title>
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script src="./tailwind.config.js"></script>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="style.css">k
 
 		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 		<style>
@@ -28,96 +28,94 @@
 			}
 		</style>
 	</head>
-	<body class="flex items-center h-screen" id="body">
-		<main id="main" class="w-screen text-[#686868]">
-			<nav
-				class="flex justify-between sm:mx-24 my-6 mx-4 fixed top-0 right-0 left-0"
-			>
-				<div class="flex w-2/5 justify-between">
-					<img src="./images/logo.svg" alt="company-logo" class="h-fit"/>
-					<div class="hidden md:block">
-						<ul class="flex w-4/5 ml-24 relative left-0 gap-20">
-							<li class="flex h-fit w-1/4 gap-2 items-center">
-								Features
-								<img
-									src="./images/icon-arrow-down.svg"
-									class="h-fit relative top-1"
-									alt=""
-								/>
-							</li>
-							<li class="flex h-fit w-1/4 gap-2 items-center">
-								Company
-								<img
-									src="./images/icon-arrow-down.svg"
-									class="h-fit relative top-1"
-									alt=""
-								/>
-							</li>
-							<li class="w-1/4">Careers</li>
-							<li class="w-1/4">About</li>
-						</ul>
-					</div>
+	<body
+		class="flex items-center h-screen justify-center font-['Epilogue']"
+		id="body"
+	>
+		<main class="h-full w-screen">
+			<nav class="flex justify-between w-screen items-center p-8">
+				<div class="header">
+					<img src="./images/logo.svg" alt="" class="" />
 				</div>
-				<img
-					src="./images/icon-menu.svg"
-					alt="menu icon"
-					id="menuIcon"
-					class="md:hidden"
-				/>
-				<div class="md:flex hidden gap-20">
-					<button>Login</button>
+				<ul class="md:flex w-full pl-16 gap-16 hidden">
+					<li class="flex items-center">
+						Features
+						<img src="./images/icon-arrow-down.svg" class="h-fit ml-2" alt="" />
+					</li>
+					<li class="flex items-center justify-between">
+						Company
+						<img src="./images/icon-arrow-down.svg" class="h-fit ml-2" alt="" />
+					</li>
+					<li>Careers</li>
+					<li>About</li>
+				</ul>
+				<div class="account md:flex gap-4 items-center hidden">
+					<p>Login</p>
 					<button
 						class="border-2 border-solid border-[#686868] w-full px-6 py-2 rounded-2xl"
 					>
 						Register
 					</button>
 				</div>
+				<img
+					src="./images/icon-menu.svg"
+					alt=""
+					class="md:hidden"
+					id="menuIcon"
+				/>
 			</nav>
-			<div class="flex flex-col mx-44 items-center sm:flex-row-reverse sm:justify-center">
-				<img src="./images/image-hero-mobile.png" alt="" class="sm:hidden"/>
-				<img src="./images/image-hero-desktop.png" alt="" class="hidden sm:block">
-				<div class="flex flex-col items-center">
-					<h1 class="font-bold text-center text-4xl m-8">Make remote work</h1>
-					<section>
-						<p class="text-center p-4 text-lg text-[#868686] font-semibold">
+			<div id="header-image" class="">
+				<img src="./images/image-hero-mobile.png" alt="" class="md:hidden" />
+			</div>
+			<div class="home md:h-5/6 md:flex md:justify-center md:items-center">
+				<div
+					id="main-content"
+					class="h-2/5 flex md:h-4/5 py-12 md:w-4/5 md:justify-center md:p-0 md:gap-24"
+				>
+					<div
+						id="right"
+						class="flex flex-col items-center md:items-start justify-between md:justify-evenly h-full mx-4 my-8 md:flex-1 gap-6 md:m-0 md:mr-24"
+					>
+						<h1 class="text-4xl md:text-8xl  " id="heading">
+							Make <br class="hidden md:block" />
+							remote work
+						</h1>
+						<p class="text-[#696969] text-center text-xl md:text-left md:w-4/6">
 							Get your team in sync, no matter your location. Streamline
 							processes, create team rituals, and watch productivity soar.
 						</p>
-					</section>
-					<button
-						class="bg-black w-2/5 font-semibold text-lg text-white py-3 rounded-2xl my-4"
-					>
-						Learn More
-					</button>
-					<div class="clients flex w-full justify-around my-8">
-						<div class="h-4">
-							<img
-								src="./images/client-databiz.svg"
-								alt="client-databiz"
-								class="h-full"
-							/>
-						</div>
-						<div class="h-7">
-							<img
-								src="./images/client-audiophile.svg"
-								alt="client-audiophile"
-								class="h-full"
-							/>
-						</div>
-						<div class="h-4">
-							<img
-								src="./images/client-meet.svg"
-								alt="client-meet"
-								class="h-full"
-							/>
-						</div>
-						<div class="h-5">
-							<img
-								src="./images/client-maker.svg"
-								alt="client-maker"
-								class="h-full"
-							/>
-						</div>
+						<button class="text-white bg-black px-6 py-3 rounded-2xl font-bold md:px-10 md:py-5 md:text-xl">
+							Learn more
+						</button>
+						<ul class="flex w-full justify-around md:justify-between items-center md:flex-wrap">
+							<li>
+								<img
+									src="./images/client-databiz.svg"
+									alt=""
+									class="h-4 md:h-6"
+								/>
+							</li>
+							<li>
+								<img
+									src="./images/client-audiophile.svg"
+									alt=""
+									class="h-6 md:h-10"
+								/>
+							</li>
+							<li>
+								<img src="./images/client-meet.svg" alt="" class="h-4 md:h-6" />
+							</li>
+							<li>
+								<img
+									src="./images/client-maker.svg"
+									alt=""
+									class="h-5 md:h-7"
+								/>
+							</li>
+						</ul>
+					</div>
+					<div id="left" class="hidden md:h-full md:block md:flex-1 md:w-screen">
+						<img src="./images/image-hero-desktop.png" alt="" class="h-[700px]" />
 					</div>
 				</div>
 			</div>
@@ -129,7 +127,7 @@
 			<div class="cancel-icon w-full flex justify-end">
 				<img
 					src="./images/icon-close-menu.svg"
-					class="my-6 mx-4"
+					class="m-8"
 					alt="icon-close-menu"
 					id="closeIcon"
 				/>
@@ -138,11 +136,11 @@
 				<ul class="text-lg flex flex-col gap-4">
 					<li class="flex items-center w-2/5 justify-between">
 						Features
-						<img src="./images/icon-arrow-down.svg" class="h-fit" alt="" />
+						<img src="./images/icon-arrow-down.svg" class="h-fit ml-2" alt="" />
 					</li>
 					<li class="flex items-center w-2/5 justify-between">
 						Company
-						<img src="./images/icon-arrow-down.svg" class="h-fit" alt="" />
+						<img src="./images/icon-arrow-down.svg" class="h-fit ml-2" alt="" />
 					</li>
 					<li>Careers</li>
 					<li>About</li>
@@ -157,18 +155,6 @@
 				</div>
 			</div>
 		</aside>
-		<!--
-       Features Company   Login Register Make remote work Get your team
-		in sync, no matter your location. Streamline processes, create team rituals,
-		and watch productivity soar. Learn more 
-  -->
-
-		<!-- <div class="attribution absolute bottom-0 ">
-			Challenge by
-			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
-		</div> -->
 		<script src="./script.js"></script>
 	</body>
 </html>
