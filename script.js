@@ -2,6 +2,12 @@ const showMenu = document.getElementById('menuIcon');
 const closeMenu = document.getElementById('closeIcon');
 const sideMenu = document.getElementById('aside');
 const mainScreen = document.getElementById('body');
+const clickable = document.querySelector('.click');
+const company = document.querySelector('#company');
+const arrowDown = document.querySelector('.arrow-down');
+const arrowUp = document.querySelector('.arrow-up');
+const arrDown = document.querySelector('#arr-down');
+const arrUp = document.querySelector('#arr-up');
 
 showMenu.addEventListener('click', function () {
 	sideMenu.style.display = 'block';
@@ -16,5 +22,26 @@ closeMenu.addEventListener('click', function () {
 	mainScreen.style.backgroundColor = '';
 });
 
-if (sideMenu.style.display === 'block') {
-}
+clickable.addEventListener('click', function () {
+	if (arrowDown.style.display === 'none') {
+		arrowUp.style.display = 'none';
+		arrowDown.style.display = 'block';
+		console.log('up');
+	} else {
+		arrowDown.style.display = 'none';
+		arrowUp.style.display = 'block';
+		console.log('down');
+	}
+});
+
+company.addEventListener('click', function () {
+	if (arrDown.style.display === 'none') {
+		arrUp.style.display = 'none';
+		arrDown.style.display = 'block';
+		console.log('up');
+	} else {
+		arrDown.style.display = 'none';
+		arrUp.style.display = 'block';
+		console.log('down');
+	}
+});
