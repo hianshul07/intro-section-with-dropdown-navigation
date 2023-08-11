@@ -15,7 +15,8 @@
 		<title>Frontend Mentor | Intro section with dropdown navigation</title>
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script src="./tailwind.config.js"></script>
-		<link rel="stylesheet" href="style.css">k
+		<link rel="stylesheet" href="style.css" />
+		k
 
 		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 		<style>
@@ -38,16 +39,77 @@
 					<img src="./images/logo.svg" alt="" class="" />
 				</div>
 				<ul class="md:flex w-full pl-16 gap-16 hidden">
-					<li class="click flex items-center hover:cursor-pointer" id="features">
-						Features
-						<img src="./images/icon-arrow-down.svg" class="arrow-down h-fit ml-2" alt="" id=""/>
-						<img src="./images/icon-arrow-up.svg" alt="" class="arrow-up hidden h-fit ml-2" id="">
-					</li>
-					<li class="flex items-center hover:cursor-pointer" id="company">
-						Company
-						<img src="./images/icon-arrow-down.svg" class="arrow-down h-fit ml-2" alt="" id="arr-down"/>
-						<img src="./images/icon-arrow-up.svg" alt="" class="arrow-up hidden h-fit ml-2" id="arr-up">
-					</li>
+					<div id="features">
+						<li
+							class="click flex items-center hover:cursor-pointer"
+							id="features"
+						>
+							Features
+							<img
+								src="./images/icon-arrow-down.svg"
+								class="arrow-down h-fit ml-2"
+								alt=""
+								id=""
+							/>
+							<img
+								src="./images/icon-arrow-up.svg"
+								alt=""
+								class="arrow-up hidden h-fit ml-2"
+								id=""
+							/>
+						</li>
+						<div id="menu-one" class="hidden">
+							<div
+								id="fly-out-one"
+								class="flex w-36 absolute py-4 left-32 shadow-2xl justify-center gap-2 rounded-2xl text-[#696969]"
+							>
+								<div class="left flex flex-col justify-between">
+									<img src="./images/icon-todo.svg" alt="" />
+									<img src="./images/icon-calendar.svg" alt="" /><img
+										src="./images/icon-reminders.svg"
+										alt=""
+									/>
+									<img src="./images/icon-planning.svg" alt="" />
+								</div>
+
+								<div class="right flex flex-col gap-2">
+									<li class="text-sm">Todo List</li>
+									<li class="text-sm">Calendar</li>
+									<li class="text-sm">Reminders</li>
+									<li class="text-sm">Planning</li>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="company">
+						<li class="flex items-center hover:cursor-pointer" id="company">
+							Company
+							<img
+								src="./images/icon-arrow-down.svg"
+								class="arrow-down h-fit ml-2"
+								alt=""
+								id="arr-down"
+							/>
+							<img
+								src="./images/icon-arrow-up.svg"
+								alt=""
+								class="arrow-up hidden h-fit ml-2"
+								id="arr-up"
+							/>
+						</li>
+						<div id="menu-two">
+							<div
+								id="fly-out-two"
+								class="flex w-36 absolute py-4 left-72 shadow-2xl justify-center gap-2 rounded-2xl text-[#696969]"
+							>
+								<div class="right flex flex-col gap-2">
+									<li class="text-sm">History</li>
+									<li class="text-sm">Our Team</li>
+									<li class="text-sm">Blog</li>
+								</div>
+							</div>
+						</div>
+					</div>
 					<li>Careers</li>
 					<li>About</li>
 				</ul>
@@ -78,7 +140,7 @@
 						id="right"
 						class="flex flex-col items-center md:items-start justify-between md:justify-evenly h-full mx-4 my-8 md:flex-1 gap-6 md:m-0 md:mr-24"
 					>
-						<h1 class="text-4xl md:text-8xl  " id="heading">
+						<h1 class="text-4xl md:text-8xl" id="heading">
 							Make <br class="hidden md:block" />
 							remote work
 						</h1>
@@ -86,10 +148,14 @@
 							Get your team in sync, no matter your location. Streamline
 							processes, create team rituals, and watch productivity soar.
 						</p>
-						<button class="text-white bg-black px-6 py-3 rounded-2xl font-bold md:px-10 md:py-5 md:text-xl">
+						<button
+							class="text-white bg-black px-6 py-3 rounded-2xl font-bold md:px-10 md:py-5 md:text-xl"
+						>
 							Learn more
 						</button>
-						<ul class="flex w-full justify-around md:justify-between items-center md:flex-wrap">
+						<ul
+							class="flex w-full justify-around md:justify-between items-center md:flex-wrap"
+						>
 							<li>
 								<img
 									src="./images/client-databiz.svg"
@@ -116,8 +182,15 @@
 							</li>
 						</ul>
 					</div>
-					<div id="left" class="hidden md:h-full md:block md:flex-1 md:w-screen">
-						<img src="./images/image-hero-desktop.png" alt="" class="h-[700px]" />
+					<div
+						id="left"
+						class="hidden md:h-full md:block md:flex-1 md:w-screen"
+					>
+						<img
+							src="./images/image-hero-desktop.png"
+							alt=""
+							class="h-[700px]"
+						/>
 					</div>
 				</div>
 			</div>
