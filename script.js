@@ -9,6 +9,7 @@ const arrowUp = document.querySelector('.arrow-up');
 const arrDown = document.querySelector('#arr-down');
 const arrUp = document.querySelector('#arr-up');
 const featuresMenu = document.querySelector('#menu-one')
+const companyMenu = document.querySelector('#menu-two')
 
 showMenu.addEventListener('click', function () {
 	sideMenu.style.display = 'block';
@@ -41,8 +42,10 @@ clickable1.addEventListener('click', function () {
 	if (arrDown.style.display === 'none') {
 		arrUp.style.display = 'none';
 		arrDown.style.display = 'block';
+		companyMenu.style.display = ''
 		console.log('up');
 	} else {
+		companyMenu.style.display = 'block'
 		arrDown.style.display = 'none';
 		arrUp.style.display = 'block';
 		console.log('down');
